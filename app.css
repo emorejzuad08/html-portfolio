@@ -1,0 +1,35 @@
+body{    
+    font-family: Poppins, sans-serif;
+}
+
+.navbar-collapse{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.name-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+footer {
+    position: relative;
+    top:38px;
+    border-top: 2px solid grey;
+    grid-row: 3/4;
+    display: flex;
+    align-items: center;
+    margin: 0 80px;
+    justify-content: space-between;
+    color: black;            
+}
+
+.footer-p{
+    font-size: small;
+}
+
+h1{
+    font-size: 4rem;
+}
