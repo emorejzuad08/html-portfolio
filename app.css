@@ -2,7 +2,7 @@ body{
     font-family: Poppins, sans-serif;
 }
 
-.navbar-collapse{
+#navLinks{
     display: flex;
     justify-content: flex-end;
 }
