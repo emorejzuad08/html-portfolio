@@ -5,6 +5,12 @@ body{
 .navbar-collapse{
     display: flex;
     justify-content: flex-end;
+} 
+
+@media(max-width:762px){
+    .navbar-collapse{
+        display: block;
+    }
 }
 
 .name-container{
@@ -20,16 +26,62 @@ footer {
     border-top: 2px solid grey;
     grid-row: 3/4;
     display: flex;
-    align-items: center;
+    align-items: right;
     margin: 0 80px;
-    justify-content: space-between;
     color: black;            
 }
 
 .footer-p{
-    font-size: small;
+    font-size: 10px;
+    display: flex;
+    text-align: right;
+}
+.footer-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 h1{
     font-size: 4rem;
 }
+
+
+/* loader */
+.loader{
+    display: inline-flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.loader__bar{
+    display: inline-block;
+    width: 3px;
+    height: 10px;
+    /* background-color: #fff; */    
+    background-color: black;
+    opacity: .5;    
+    border-radius: 10px;
+    animation: scale-up 1000ms var(--d) linear infinite;
+}
+
+.loader__bar:nth-child(even){
+    height: 25px;
+}
+
+.loader__bar:nth-child(3){
+    height: 40px;
+}
+
+@keyframes scale-up {
+    25% {
+        opacity: 1;
+        scale: 1 1.5;
+    }
+
+    50% {
+        scale: 1;
+    }
+    
+}
+/* loader */
