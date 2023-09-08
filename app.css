@@ -7,12 +7,6 @@ body{
     justify-content: flex-end;
 } 
 
-@media(max-width:762px){
-    .navbar-collapse{
-        display: block;
-    }
-}
-
 .name-container{
     display: flex;
     justify-content: center;
@@ -85,3 +79,38 @@ h1{
     
 }
 /* loader */
+
+li{
+    list-style-type: none;
+}
+
+.tech-stacks {
+    padding-top: 20px;
+    border-top: 1px solid var(---dark);
+}
+
+.tech-stack-list {
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    gap: 15px;
+}
+
+.tech-stack-list li {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+@media(max-width:762px){
+    .navbar-collapse{
+        display: block;
+    }
+
+    .tech-stack-list {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        gap: 15px;
+    }
+}
